@@ -1,0 +1,9 @@
+{
+  "appId": "ye.misbah.english8",
+  "appName": "مصباح الإنجليزية",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": true
+  },
+  "backgroundColor": "#173A5C"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "misbah-english-grade8",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Misbah English — interactive learning app for English Course for Yemen, Pupil's Book 2 (Grade 8).",
+  "author": "Hasan Bin Aqel (@hsn.pmt)",
+  "license": "MIT",
+  "scripts": {
+    "add:android": "cap add android",
+    "sync": "cap sync android",
+    "assets": "capacitor-assets generate --android",
+    "open:android": "cap open android",
+    "build:apk": "cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.2.0"
+  }
+}

@@ -1,0 +1,42 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#244F76"/>
+      <stop offset="0.55" stop-color="#173A5C"/>
+      <stop offset="1" stop-color="#102A43"/>
+    </linearGradient>
+    <clipPath id="arch">
+      <path d="M150 392 L150 236 A106 106 0 0 1 362 236 L362 392 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- glow -->
+  <circle cx="256" cy="250" r="150" fill="#E0962A" opacity="0.14"/>
+
+  <!-- qamariya window -->
+  <g clip-path="url(#arch)">
+    <rect x="150" y="200" width="212" height="200" fill="#13243a"/>
+    <!-- petals -->
+    <g stroke="#F3EEE2" stroke-width="3">
+      <path d="M256 280 L150 280 A106 106 0 0 1 168 222 Z" fill="#E0962A" opacity="0.92"/>
+      <path d="M256 280 L168 222 A106 106 0 0 1 220 188 Z" fill="#1F8A77" opacity="0.92"/>
+      <path d="M256 280 L220 188 A106 106 0 0 1 292 188 Z" fill="#C25B57" opacity="0.92"/>
+      <path d="M256 280 L292 188 A106 106 0 0 1 344 222 Z" fill="#9FC3D6" opacity="0.92"/>
+      <path d="M256 280 L344 222 A106 106 0 0 1 362 280 Z" fill="#4C8B3F" opacity="0.92"/>
+    </g>
+    <rect x="150" y="372" width="212" height="20" fill="#E0962A"/>
+  </g>
+
+  <!-- arch frame -->
+  <path d="M150 392 L150 236 A106 106 0 0 1 362 236 L362 392" fill="none" stroke="#F3EEE2" stroke-width="8"/>
+  <line x1="256" y1="132" x2="256" y2="392" stroke="#F3EEE2" stroke-width="3" opacity="0.7"/>
+  <path d="M178 358 A82 82 0 0 1 334 358" fill="none" stroke="#F3EEE2" stroke-width="3" opacity="0.55"/>
+
+  <!-- base line -->
+  <rect x="150" y="392" width="212" height="6" fill="#F3EEE2"/>
+
+  <!-- letter A E hint at bottom -->
+  <text x="256" y="452" font-family="Trebuchet MS, Arial, sans-serif" font-size="44" font-weight="800" fill="#F3EEE2" text-anchor="middle" letter-spacing="4">ABC</text>
+</svg>
