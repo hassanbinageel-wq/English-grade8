@@ -5,6 +5,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+defaults:
+  run:
+    working-directory: misbah-english-grade8
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,9 +31,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: Misbah-English-Grade8-APK
-          path: dist/Misbah-English-Grade8.apk
+          path: misbah-english-grade8/dist/Misbah-English-Grade8.apk
       - uses: softprops/action-gh-release@v2
         with:
           tag_name: v1.0.${{ github.run_number }}
           name: مصباح الإنجليزية v1.0.${{ github.run_number }}
-          files: dist/Misbah-English-Grade8.apk
+          files: misbah-english-grade8/dist/Misbah-English-Grade8.apk
