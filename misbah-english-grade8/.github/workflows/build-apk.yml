@@ -20,7 +20,6 @@ jobs:
       - uses: android-actions/setup-android@v3
       - run: npm install
       - run: npx cap add android
-      - run: npx capacitor-assets generate --android || echo skip
       - run: npx cap sync android
       - run: cd android && chmod +x gradlew && ./gradlew assembleDebug
       - run: mkdir -p dist && cp android/app/build/outputs/apk/debug/app-debug.apk dist/app.apk
